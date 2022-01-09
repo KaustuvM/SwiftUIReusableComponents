@@ -22,7 +22,7 @@ struct ActivityIndicatorStyleFour: View {
         ZStack {
             ZStack {
                 Circle()
-                    .stroke(.gray.opacity(0.2), style: StrokeStyle(lineWidth: 20))
+                    .stroke(.gray.opacity(0.4), style: StrokeStyle(lineWidth: 20))
                 
                 Circle()
                     .trim(from: 0.0, to: fraction)
@@ -38,7 +38,7 @@ struct ActivityIndicatorStyleFour: View {
                 Text("\(fraction*100, specifier: "%.0f")%")
                     .font(.system(size: 25, weight: .bold, design: .default))
                     .fontWeight(.heavy)
-                    .foregroundColor(.primary)
+                    .gradientForeground(colors: [color_1, color_2])
             }
             .frame(width: 150, height: 150, alignment: .center)
         }

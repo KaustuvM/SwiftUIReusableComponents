@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
@@ -24,4 +25,13 @@ extension UIColor {
            blue: rgb & 0xFF
        )
    }
+}
+
+extension View {
+    public func gradientForeground(colors: [Color]) -> some View {
+        self.overlay(LinearGradient(gradient: .init(colors: colors),
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing))
+            .mask(self)
+    }
 }

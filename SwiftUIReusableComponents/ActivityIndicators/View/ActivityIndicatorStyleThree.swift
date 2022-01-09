@@ -31,19 +31,27 @@ struct ActivityIndicatorStyleThree: View {
     var body: some View {
         ZStack {
             ZStack {
-                HStack {
-                    ForEach(0..<noOfElements, id: \.self) { index in
-                        Rectangle()
-                            .fill(index%2 == 0 ? color_1 : color_2)
-                            .frame(width: width, height: height, alignment: .leading)
-                            .cornerRadius(2)
-                            .offset(y: isAnimating ? getOffsetY1(index: index) : getOffsetY2(index: index))
-                            .animation(
-                                Animation
-                                    .easeOut(duration: 1)
-                                    .repeatForever()
-                            , value: isAnimating)
+                VStack {
+                    HStack {
+                        ForEach(0..<noOfElements, id: \.self) { index in
+                            Rectangle()
+                                .fill(index%2 == 0 ? color_1 : color_2)
+                                .frame(width: width, height: height, alignment: .leading)
+                                .cornerRadius(2)
+                                .offset(y: isAnimating ? getOffsetY1(index: index) : getOffsetY2(index: index))
+                                .animation(
+                                    Animation
+                                        .easeOut(duration: 1)
+                                        .repeatForever()
+                                , value: isAnimating)
+                        }
                     }
+                    
+                    Text("Loading...")
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .fontWeight(.heavy)
+                        .gradientForeground(colors: [color_1, color_2])
+                        .padding(.top, 20)
                 }
             }
         }

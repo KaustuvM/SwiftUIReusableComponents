@@ -32,6 +32,11 @@ struct ActivityIndicatorStyleFive: View {
                     .animation(Animation.linear(duration: duration)
                                 .repeatForever(autoreverses: false),
                                value: isAnimating)
+                
+                Text("Loading...")
+                    .font(.system(size: 15, weight: .bold, design: .default))
+                    .fontWeight(.heavy)
+                    .gradientForeground(colors: [color_1, color_2])
             }
             .frame(width: 150, height: 150, alignment: .center)
         }

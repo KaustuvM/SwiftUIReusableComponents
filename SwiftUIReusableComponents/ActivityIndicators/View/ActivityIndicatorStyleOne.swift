@@ -24,23 +24,20 @@ struct ActivityIndicatorStyleOne: View {
     var body: some View {
         VStack {
             ZStack {
-                ZStack{
+                ZStack(alignment: .leading){
                     Rectangle()
-                        .fill(color_2)
+                        .stroke(.gray.opacity(0.4), style: StrokeStyle(lineWidth: 20))
+                        .frame(width: progressBarWidth, height: height, alignment: .leading)
+                    Rectangle()
+                        .stroke(LinearGradient(
+                            gradient: Gradient(colors: [color_1, color_2]),
+                            startPoint: .leading,
+                            endPoint: .trailing),
+                                style: StrokeStyle(lineWidth: 20, lineCap: .round))
                         .frame(width: width, height: height, alignment: .leading)
                         .animation(Animation.linear(duration: duration), value: width)
                 }
                 .frame(width: progressBarWidth, height: height, alignment: .leading)
-                
-                ZStack{
-                    Rectangle()
-                        .fill(color_1)
-                        .frame(
-                            width: (progressBarWidth - width) > 0 ? progressBarWidth - width : 0,
-                            height: height, alignment: .trailing)
-                        .animation(Animation.linear(duration: duration), value: width)
-                }
-                .frame(width: progressBarWidth, height: height, alignment: .trailing)
             }
             .cornerRadius(20)
             .padding(.top, 30)
@@ -61,7 +58,7 @@ struct ActivityIndicatorStyleOne: View {
             Text("\((width/progressBarWidth)*100, specifier: "%.0f")%")
                 .font(.system(size: 25, weight: .bold, design: .default))
                 .fontWeight(.heavy)
-                .foregroundColor(.primary)
+                .gradientForeground(colors: [color_1, color_2])
         }
     }
 }
