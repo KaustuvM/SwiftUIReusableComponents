@@ -22,14 +22,23 @@ struct ActivityIndicatorStyleFour: View {
         ZStack {
             ZStack {
                 Circle()
-                    .stroke(color_1, style: StrokeStyle(lineWidth: 10))
+                    .stroke(.gray.opacity(0.2), style: StrokeStyle(lineWidth: 20))
                 
                 Circle()
                     .trim(from: 0.0, to: fraction)
-                    .stroke(color_2, style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                    .stroke(LinearGradient(
+                        gradient: Gradient(colors: [color_1, color_2]),
+                        startPoint: .leading,
+                        endPoint: .trailing),
+                            style: StrokeStyle(lineWidth: 20, lineCap: .round))
                     .rotationEffect(.init(degrees: -90))
                     .animation(Animation.linear(duration: duration),
                                value: fraction)
+                
+                Text("\(fraction*100, specifier: "%.0f")%")
+                    .font(.system(size: 25, weight: .bold, design: .default))
+                    .fontWeight(.heavy)
+                    .foregroundColor(.primary)
             }
             .frame(width: 150, height: 150, alignment: .center)
         }

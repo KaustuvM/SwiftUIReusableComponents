@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-fileprivate var duration: CGFloat = 0.25
+fileprivate var duration: CGFloat = 0.5
 
 struct ActivityIndicatorStyleOne: View {
     @Binding var color_1: Color
@@ -22,36 +22,46 @@ struct ActivityIndicatorStyleOne: View {
     let timer = Timer.publish(every: duration, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        ZStack {
-            ZStack{
-                Rectangle()
-                    .fill(color_2)
-                    .frame(width: width, height: height, alignment: .leading)
-                    .animation(Animation.linear(duration: duration), value: width)
-            }
-            .frame(width: progressBarWidth, height: height, alignment: .leading)
-            
-            ZStack{
-                Rectangle()
-                    .fill(color_1)
-                    .frame(
-                        width: (progressBarWidth - width) > 0 ? progressBarWidth - width : 0,
-                        height: height, alignment: .trailing)
-                    .animation(Animation.linear(duration: duration), value: width)
-            }
-            .frame(width: progressBarWidth, height: height, alignment: .trailing)
-        }
-        .cornerRadius(20)
-        .padding(.top, 30)
-        .onReceive(timer) { time in
-            if width < progressBarWidth {
-                width += progress
-            } else {
-                if isSoundOn {
-                    playSound(sound: "success", type: "m4a")
+        VStack {
+            ZStack {
+                ZStack{
+                    Rectangle()
+                        .fill(color_2)
+                        .frame(width: width, height: height, alignment: .leading)
+                        .animation(Animation.linear(duration: duration), value: width)
                 }
-                width = 0
+                .frame(width: progressBarWidth, height: height, alignment: .leading)
+                
+                ZStack{
+                    Rectangle()
+                        .fill(color_1)
+                        .frame(
+                            width: (progressBarWidth - width) > 0 ? progressBarWidth - width : 0,
+                            height: height, alignment: .trailing)
+                        .animation(Animation.linear(duration: duration), value: width)
+                }
+                .frame(width: progressBarWidth, height: height, alignment: .trailing)
             }
+            .cornerRadius(20)
+            .padding(.top, 30)
+            .onReceive(timer) { time in
+                if width < progressBarWidth {
+                    if (width + progress) > progressBarWidth {
+                        width = progressBarWidth
+                    } else {
+                        width += progress
+                    }
+                } else {
+                    if isSoundOn {
+                        playSound(sound: "success", type: "m4a")
+                    }
+                    width = 0
+                }
+            }
+            Text("\((width/progressBarWidth)*100, specifier: "%.0f")%")
+                .font(.system(size: 25, weight: .bold, design: .default))
+                .fontWeight(.heavy)
+                .foregroundColor(.primary)
         }
     }
 }
