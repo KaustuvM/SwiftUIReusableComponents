@@ -80,9 +80,65 @@ class AppState: ObservableObject {
                 displaySoundOption: true,
                 isSoundOn: false,
                 gradientColor: [.gray, .black],
-                viewType: .PCSO_CONTROL_STYLE_ONE),
+                viewType: .PAGE_CONTROL_STYLE_ONE),
             hScrollItems: [],
             vScrollItems: []
+        ),
+        TemplateModel(
+            image: "hand.tap.fill",
+            title: "Button",
+            caption: "Various button styles",
+            colors: [Color.gray, Color.black],
+            navigateTo: .VSCROLL,
+            item: ItemModel(),
+            hScrollItems: [],
+            vScrollItems: [
+                ItemModel(
+                    description: "Activity Indicator Style One",
+                    fileName: "ActivityIndicatorStyleOne.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: true,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_2"), Color("Dark_2")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_ONE),
+                ItemModel(
+                    description: "Activity Indicator Style Two",
+                    fileName: "ActivityIndicatorStyleTwo.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: false,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_4"), Color("Dark_4")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_TWO),
+                ItemModel(
+                    description: "Activity Indicator Style Three",
+                    fileName: "ActivityIndicatorStyleThree.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: false,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_1"), Color("Dark_1")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_THREE),
+                ItemModel(
+                    description: "Activity Indicator Style Four",
+                    fileName: "ActivityIndicatorStyleFour.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: true,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_2"), Color("Dark_2")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_FOUR),
+                ItemModel(
+                    description: "Activity Indicator Style Five",
+                    fileName: "ActivityIndicatorStyleFive.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: false,
+                    isSoundOn: false,
+                    gradientColor: [Color("Dark_2"), Color("Dark_12")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_FIVE)
+            ]
         )
     ]
     

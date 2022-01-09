@@ -29,6 +29,16 @@ struct VScrollWrapperItemView: View {
                 CapsuleButtonStyleOne(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             case .CAPSULE_BUTTON_STYLE_TWO:
                 CapsuleButtonStyleTwo(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_ONE:
+                ActivityIndicatorStyleOne(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_TWO:
+                ActivityIndicatorStyleTwo(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_THREE:
+                ActivityIndicatorStyleThree(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_FOUR:
+                ActivityIndicatorStyleFour(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_FIVE:
+                ActivityIndicatorStyleFive(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             default:
                 ZStack {
                     Text("Nothing to display...")

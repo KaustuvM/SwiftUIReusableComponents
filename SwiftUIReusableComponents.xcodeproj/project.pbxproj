@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065C0117278A4A38006F2860 /* ActivityIndicatorStyleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C0116278A4A38006F2860 /* ActivityIndicatorStyleOne.swift */; };
+		065C0119278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C0118278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift */; };
+		065C011B278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C011A278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift */; };
 		0693E9D52775B5E700502261 /* PageControlStyleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693E9D42775B5E700502261 /* PageControlStyleOne.swift */; };
 		0693E9D72775B73300502261 /* PCSOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693E9D62775B73300502261 /* PCSOButton.swift */; };
 		0693E9DB2775BFA300502261 /* PCSOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693E9DA2775BFA300502261 /* PCSOModel.swift */; };
@@ -17,6 +20,9 @@
 		0693E9EA2776728A00502261 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0693E9E82776728A00502261 /* chimeup.mp3 */; };
 		0693E9EB2776728A00502261 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0693E9E92776728A00502261 /* success.m4a */; };
 		0693E9ED277672D500502261 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693E9EC277672D500502261 /* AudioPlayer.swift */; };
+		06D1CA8E278A943500E61D4F /* ActivityIndicatorStyleFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA8D278A943500E61D4F /* ActivityIndicatorStyleFour.swift */; };
+		06D1CA90278A944800E61D4F /* ActivityIndicatorStyleFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA8F278A944800E61D4F /* ActivityIndicatorStyleFive.swift */; };
+		06D1CA92278A945700E61D4F /* ActivityIndicatorStyleSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA91278A945700E61D4F /* ActivityIndicatorStyleSix.swift */; };
 		06D93AE5277197A7009B668C /* SliderButtonStyleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D93AE4277197A7009B668C /* SliderButtonStyleOne.swift */; };
 		06D93AE7277197C6009B668C /* SliderButtonStyleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D93AE6277197C6009B668C /* SliderButtonStyleTwo.swift */; };
 		06D93AE927719C2C009B668C /* SliderButtonStyleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D93AE827719C2C009B668C /* SliderButtonStyleThree.swift */; };
@@ -38,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065C0116278A4A38006F2860 /* ActivityIndicatorStyleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleOne.swift; sourceTree = "<group>"; };
+		065C0118278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleTwo.swift; sourceTree = "<group>"; };
+		065C011A278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleThree.swift; sourceTree = "<group>"; };
 		0693E9D42775B5E700502261 /* PageControlStyleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlStyleOne.swift; sourceTree = "<group>"; };
 		0693E9D62775B73300502261 /* PCSOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSOButton.swift; sourceTree = "<group>"; };
 		0693E9DA2775BFA300502261 /* PCSOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSOModel.swift; sourceTree = "<group>"; };
@@ -48,6 +57,9 @@
 		0693E9E82776728A00502261 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		0693E9E92776728A00502261 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		0693E9EC277672D500502261 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		06D1CA8D278A943500E61D4F /* ActivityIndicatorStyleFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleFour.swift; sourceTree = "<group>"; };
+		06D1CA8F278A944800E61D4F /* ActivityIndicatorStyleFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleFive.swift; sourceTree = "<group>"; };
+		06D1CA91278A945700E61D4F /* ActivityIndicatorStyleSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleSix.swift; sourceTree = "<group>"; };
 		06D93AE4277197A7009B668C /* SliderButtonStyleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButtonStyleOne.swift; sourceTree = "<group>"; };
 		06D93AE6277197C6009B668C /* SliderButtonStyleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButtonStyleTwo.swift; sourceTree = "<group>"; };
 		06D93AE827719C2C009B668C /* SliderButtonStyleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButtonStyleThree.swift; sourceTree = "<group>"; };
@@ -80,6 +92,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065C0114278A49EF006F2860 /* ActivityIndicators */ = {
+			isa = PBXGroup;
+			children = (
+				065C0115278A4A13006F2860 /* View */,
+			);
+			path = ActivityIndicators;
+			sourceTree = "<group>";
+		};
+		065C0115278A4A13006F2860 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				065C0116278A4A38006F2860 /* ActivityIndicatorStyleOne.swift */,
+				065C0118278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift */,
+				065C011A278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift */,
+				06D1CA8D278A943500E61D4F /* ActivityIndicatorStyleFour.swift */,
+				06D1CA8F278A944800E61D4F /* ActivityIndicatorStyleFive.swift */,
+				06D1CA91278A945700E61D4F /* ActivityIndicatorStyleSix.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0693E9D32775B53300502261 /* PageControlStyleOne */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +189,7 @@
 		06F78D46276FF713007CEED6 /* SwiftUIReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				065C0114278A49EF006F2860 /* ActivityIndicators */,
 				06D93AEE2774F652009B668C /* PageControl */,
 				06F78D6E277043A0007CEED6 /* Buttons */,
 				06F78D55276FF909007CEED6 /* Common */,
@@ -310,11 +344,16 @@
 				0693E9D72775B73300502261 /* PCSOButton.swift in Sources */,
 				06F78D48276FF713007CEED6 /* SwiftUIReusableComponentsApp.swift in Sources */,
 				0693E9E42776485400502261 /* TestView.swift in Sources */,
+				06D1CA90278A944800E61D4F /* ActivityIndicatorStyleFive.swift in Sources */,
+				065C011B278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift in Sources */,
+				06D1CA8E278A943500E61D4F /* ActivityIndicatorStyleFour.swift in Sources */,
 				0693E9E02775C08900502261 /* PCSOState.swift in Sources */,
 				06F78D65277039F5007CEED6 /* HScrollView.swift in Sources */,
+				065C0117278A4A38006F2860 /* ActivityIndicatorStyleOne.swift in Sources */,
 				06D93AF22774FC9F009B668C /* CapsuleButtonStyleOne.swift in Sources */,
 				0693E9DB2775BFA300502261 /* PCSOModel.swift in Sources */,
 				0693E9D52775B5E700502261 /* PageControlStyleOne.swift in Sources */,
+				065C0119278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift in Sources */,
 				0693E9E22775C33700502261 /* PCSOCard.swift in Sources */,
 				06F78D6927703D74007CEED6 /* TemplateModel.swift in Sources */,
 				0693E9E6277651A000502261 /* WrapperItemView.swift in Sources */,
@@ -329,6 +368,7 @@
 				06F78D7D27705AF5007CEED6 /* Util.swift in Sources */,
 				06F78D58276FF925007CEED6 /* RootView.swift in Sources */,
 				06F78D7A277055E2007CEED6 /* HScrollWrapperItemView.swift in Sources */,
+				06D1CA92278A945700E61D4F /* ActivityIndicatorStyleSix.swift in Sources */,
 				06F78D5A276FF930007CEED6 /* RowView.swift in Sources */,
 				06D93AE927719C2C009B668C /* SliderButtonStyleThree.swift in Sources */,
 			);

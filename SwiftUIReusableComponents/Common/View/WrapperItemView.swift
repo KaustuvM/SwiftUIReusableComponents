@@ -16,7 +16,7 @@ struct WrapperItemView: View {
         VStack {
             
             switch appState.templateData[templateIndex].item.viewType {
-            case .PCSO_CONTROL_STYLE_ONE:
+            case .PAGE_CONTROL_STYLE_ONE:
                 PageControlStyleOne(isSoundOn: $appState.templateData[templateIndex].item.isSoundOn)
             default:
                 ZStack {
