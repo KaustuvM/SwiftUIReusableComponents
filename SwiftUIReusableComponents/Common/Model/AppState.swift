@@ -67,9 +67,9 @@ class AppState: ObservableObject {
             ]
         ),
         TemplateModel(
-            image: "hand.tap.fill",
+            image: "tablecells.badge.ellipsis",
             title: "Page Control",
-            caption: "Page control style 1",
+            caption: "Page control style - one",
             colors: [Color.gray, Color.black],
             navigateTo: .SINGLE,
             item: ItemModel(
@@ -85,9 +85,9 @@ class AppState: ObservableObject {
             vScrollItems: []
         ),
         TemplateModel(
-            image: "hand.tap.fill",
-            title: "Button",
-            caption: "Various button styles",
+            image: "hourglass.circle",
+            title: "Activity Indicators",
+            caption: "Various activity indicator styles",
             colors: [Color.gray, Color.black],
             navigateTo: .VSCROLL,
             item: ItemModel(),

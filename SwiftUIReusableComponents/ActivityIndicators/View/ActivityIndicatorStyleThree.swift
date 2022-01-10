@@ -38,7 +38,7 @@ struct ActivityIndicatorStyleThree: View {
                                 .fill(index%2 == 0 ? color_1 : color_2)
                                 .frame(width: width, height: height, alignment: .leading)
                                 .cornerRadius(2)
-                                .offset(y: isAnimating ? getOffsetY1(index: index) : getOffsetY2(index: index))
+                                .offset(y: isAnimating ? getOffset(index) : getOffset(index, false))
                                 .animation(
                                     Animation
                                         .easeOut(duration: 1)
@@ -62,38 +62,18 @@ struct ActivityIndicatorStyleThree: View {
         }
     }
     
-    func getOffsetY1(index: Int) -> CGFloat {
+    /*
+        To calculate offset for an element,
+        we need to know its index (position) and
+        whether we are looking for the initial or the final offset.
+     */
+    func getOffset(_ index: Int, _ isInitial: Bool = true) -> CGFloat {
         
         var offset: CGFloat = 0
         var localIndex = 0
         let segment = index/repeatPatternAfter
         localIndex = index - segment*repeatPatternAfter
-        let isNegative = segment%2 == 0 ? -1.0 : 1.0
-
-        switch localIndex {
-        case 0:
-            offset = isNegative*delta*0
-        case 1,5:
-            offset = isNegative*delta
-        case 2,4:
-            offset = isNegative*delta*2
-        case 3:
-            offset = isNegative*delta*3
-        default:
-            offset = isNegative*delta*3
-        }
-        
-        return offset
-    }
-    
-    func getOffsetY2(index: Int) -> CGFloat {
-        
-        var offset: CGFloat = 0
-        var localIndex = 0
-        let segment = index/repeatPatternAfter
-        localIndex = index - segment*repeatPatternAfter
-        let isNegative = segment%2 == 0 ? 1.0 : -1.0
-        
+        let isNegative = segment%2 == 0 ? (isInitial ? -1.0 : 1.0) : (isInitial ? 1.0 : -1.0)
 
         switch localIndex {
         case 0:
