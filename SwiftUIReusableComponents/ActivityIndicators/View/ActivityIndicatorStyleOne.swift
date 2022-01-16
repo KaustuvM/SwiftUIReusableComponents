@@ -26,14 +26,14 @@ struct ActivityIndicatorStyleOne: View {
             ZStack {
                 ZStack(alignment: .leading){
                     Rectangle()
-                        .stroke(.gray.opacity(0.4), style: StrokeStyle(lineWidth: 20))
+                        .stroke(.gray.opacity(0.4), style: StrokeStyle(lineWidth: height))
                         .frame(width: progressBarWidth, height: height, alignment: .leading)
                     Rectangle()
                         .stroke(LinearGradient(
                             gradient: Gradient(colors: [color_1, color_2]),
                             startPoint: .leading,
                             endPoint: .trailing),
-                                style: StrokeStyle(lineWidth: 20, lineCap: .round))
+                                style: StrokeStyle(lineWidth: height, lineCap: .round))
                         .frame(width: width, height: height, alignment: .leading)
                         .animation(Animation.linear(duration: duration), value: width)
                 }

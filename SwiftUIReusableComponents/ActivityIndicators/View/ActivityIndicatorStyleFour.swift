@@ -42,7 +42,6 @@ struct ActivityIndicatorStyleFour: View {
             }
             .frame(width: 150, height: 150, alignment: .center)
         }
-        .frame(width: progressBarWidth)
         .padding(.top, 40)
         .onReceive(timer) { time in
             if fraction < 1.0 {

@@ -41,6 +41,8 @@ struct VScrollWrapperItemView: View {
                 ActivityIndicatorStyleFour(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             case .ACTIITY_INDICATOR_STYLE_FIVE:
                 ActivityIndicatorStyleFive(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .ACTIITY_INDICATOR_STYLE_SIX:
+                ActivityIndicatorStyleSix(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             default:
                 ZStack {
                     Text("Nothing to display...")

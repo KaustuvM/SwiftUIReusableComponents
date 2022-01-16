@@ -20,14 +20,13 @@ struct ActivityIndicatorStyleFive: View {
     var body: some View {
         ZStack {
             ZStack {
-                
                 Circle()
                     .trim(from: 0.0, to: 0.8)
                     .stroke(LinearGradient(
                         gradient: Gradient(colors: [color_1, color_2]),
                         startPoint: .leading,
                         endPoint: .trailing),
-                            style: StrokeStyle(lineWidth: 40, lineCap: .round))
+                            style: StrokeStyle(lineWidth: 30, lineCap: .round))
                     .rotationEffect(Angle(degrees: isAnimating ? 360 : 0))
                     .animation(Animation.linear(duration: duration)
                                 .repeatForever(autoreverses: false),
@@ -40,7 +39,6 @@ struct ActivityIndicatorStyleFive: View {
             }
             .frame(width: 150, height: 150, alignment: .center)
         }
-        .frame(width: progressBarWidth)
         .padding(.top, 40)
         .onAppear() {
             self.isAnimating = true

@@ -146,7 +146,16 @@ class AppState: ObservableObject {
                     displaySoundOption: false,
                     isSoundOn: false,
                     gradientColor: [Color("Dark_2"), Color("Dark_12")],
-                    viewType: .ACTIITY_INDICATOR_STYLE_FIVE)
+                    viewType: .ACTIITY_INDICATOR_STYLE_FIVE),
+                ItemModel(
+                    description: "Activity Indicator Style Six",
+                    fileName: "ActivityIndicatorStyleSix.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: false,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_15"), Color("Dark_15")],
+                    viewType: .ACTIITY_INDICATOR_STYLE_SIX)
             ]
         )
     ]
