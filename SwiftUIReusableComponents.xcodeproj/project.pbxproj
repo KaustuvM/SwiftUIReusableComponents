@@ -41,6 +41,7 @@
 		06F78D7627704E88007CEED6 /* VScrollWrapperItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F78D7527704E88007CEED6 /* VScrollWrapperItemView.swift */; };
 		06F78D7A277055E2007CEED6 /* HScrollWrapperItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F78D79277055E2007CEED6 /* HScrollWrapperItemView.swift */; };
 		06F78D7D27705AF5007CEED6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F78D7C27705AF5007CEED6 /* Util.swift */; };
+		06F935DB2794042E009B95E1 /* CircleButtonStyleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F935DA2794042E009B95E1 /* CircleButtonStyleOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		06F78D7527704E88007CEED6 /* VScrollWrapperItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VScrollWrapperItemView.swift; sourceTree = "<group>"; };
 		06F78D79277055E2007CEED6 /* HScrollWrapperItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollWrapperItemView.swift; sourceTree = "<group>"; };
 		06F78D7C27705AF5007CEED6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		06F935DA2794042E009B95E1 /* CircleButtonStyleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonStyleOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				06D93AE827719C2C009B668C /* SliderButtonStyleThree.swift */,
 				06D93AF12774FC9F009B668C /* CapsuleButtonStyleOne.swift */,
 				06D93AF3277501C3009B668C /* CapsuleButtonStyleTwo.swift */,
+				06F935DA2794042E009B95E1 /* CircleButtonStyleOne.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				0693E9D72775B73300502261 /* PCSOButton.swift in Sources */,
 				06F78D48276FF713007CEED6 /* SwiftUIReusableComponentsApp.swift in Sources */,
+				06F935DB2794042E009B95E1 /* CircleButtonStyleOne.swift in Sources */,
 				0693E9E42776485400502261 /* TestView.swift in Sources */,
 				06D1CA90278A944800E61D4F /* ActivityIndicatorStyleFive.swift in Sources */,
 				065C011B278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift in Sources */,

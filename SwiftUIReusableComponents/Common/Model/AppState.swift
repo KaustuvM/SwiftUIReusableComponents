@@ -63,7 +63,16 @@ class AppState: ObservableObject {
                     displaySoundOption: true,
                     isSoundOn: false,
                     gradientColor: [Color("Light_5"), Color("Dark_5")],
-                    viewType: .SLIDER_BUTTON_STYLE_THREE)
+                    viewType: .SLIDER_BUTTON_STYLE_THREE),
+                ItemModel(
+                    description: "Circle Button Style One",
+                    fileName: "CircleButtonStyleThree.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: true,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_14"), Color("Dark_14")],
+                    viewType: .CIRCLE_BUTTON_STYLE_ONE)
             ]
         ),
         TemplateModel(
