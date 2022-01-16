@@ -23,8 +23,10 @@ struct VScrollWrapperItemView: View {
                     .padding(.top)
             case .SLIDER_BUTTON_STYLE_TWO:
                 SliderButtonStyleTwo(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+                    .padding(.top)
             case .SLIDER_BUTTON_STYLE_THREE:
                 SliderButtonStyleThree(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+                    .padding(.top)
             case .CAPSULE_BUTTON_STYLE_ONE:
                 CapsuleButtonStyleOne(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             case .CAPSULE_BUTTON_STYLE_TWO:

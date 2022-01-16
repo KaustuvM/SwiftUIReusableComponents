@@ -53,7 +53,7 @@ struct SliderButtonStyleOne: View {
                         }
                         .onEnded() { _ in
                             withAnimation(.easeOut(duration: duration)) {
-                                if buttonOffset > rowWidth/2 {
+                                if buttonOffset + konst2/2 > rowWidth/2 {
                                     buttonOffset = rowWidth - konst2*2
                                     if isSoundOn {
                                         playSound(sound: "success", type: "m4a")
@@ -74,5 +74,6 @@ struct SliderButtonStyleOne: View {
 struct SliderButtonStyleOne_Previews: PreviewProvider {
     static var previews: some View {
         SliderButtonStyleOne(color_1: .constant(Color("Light_1")), color_2: .constant(Color("Dark_1")), isSoundOn: .constant(false))
-            .preferredColorScheme(.dark)    }
+            .preferredColorScheme(.dark)
+    }
 }
