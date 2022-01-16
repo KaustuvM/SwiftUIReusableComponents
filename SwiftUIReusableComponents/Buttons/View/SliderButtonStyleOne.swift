@@ -7,12 +7,21 @@
 
 import SwiftUI
 
+// Used to regulate the width (inversely proportional)
+fileprivate var konst1 = 200.0
+// Used to regulate the height (directly proportional)
+fileprivate var konst2 = 30.0
+// Used to regulate slider movement (slow/fast - inversely proportional)
+fileprivate var duration: CGFloat = 1.0
+
+// Do not change anything below
+fileprivate var rowWidth: Double = UIScreen.main.bounds.width - konst1
+
 struct SliderButtonStyleOne: View {
     @Binding var color_1: Color
     @Binding var color_2: Color
     @Binding var isSoundOn: Bool
     
-    @State private var rowWidth: Double = UIScreen.main.bounds.width - 40
     @State private var buttonOffset: CGFloat = 0
     
     var body: some View {
@@ -23,29 +32,29 @@ struct SliderButtonStyleOne: View {
                 )
             Capsule()
                 .fill(Color.black.opacity(0.1))
-                .padding(20)
+                .padding(konst2/2)
             
             HStack {
                 ZStack {
                     Circle()
                         .fill(.black.opacity(0.15))
-                        .padding(8)
+                        .padding(konst2/4)
                     Image(systemName: "chevron.right.2")
-                        .font(.system(size: 24, weight: .bold))
+                        .font(.system(size: konst2/2, weight: .bold))
                 }
-                .frame(width: 80, height: 80, alignment: .center)
+                .frame(width: konst2*2, height: konst2*2, alignment: .center)
                 .offset(x: buttonOffset)
                 .gesture(
                     DragGesture()
                         .onChanged() { gesture in
-                            if gesture.translation.width > 0 && buttonOffset <= rowWidth - 20 {
+                            if gesture.translation.width > 0 && buttonOffset <= rowWidth - konst2*2 {
                                 buttonOffset = gesture.translation.width
                             }
                         }
                         .onEnded() { _ in
-                            withAnimation(.easeOut(duration: 1.0)) {
+                            withAnimation(.easeOut(duration: duration)) {
                                 if buttonOffset > rowWidth/2 {
-                                    buttonOffset = rowWidth - 80
+                                    buttonOffset = rowWidth - konst2*2
                                     if isSoundOn {
                                         playSound(sound: "success", type: "m4a")
                                     }
@@ -58,14 +67,12 @@ struct SliderButtonStyleOne: View {
                 Spacer()
             }
         }
-        .frame(width: rowWidth, height: 80, alignment: .center)
-        .padding()
+        .frame(width: rowWidth, height: konst2*2, alignment: .center)
     }
 }
 
 struct SliderButtonStyleOne_Previews: PreviewProvider {
     static var previews: some View {
         SliderButtonStyleOne(color_1: .constant(Color("Light_1")), color_2: .constant(Color("Dark_1")), isSoundOn: .constant(false))
-            .previewLayout(.sizeThatFits)
-    }
+            .preferredColorScheme(.dark)    }
 }

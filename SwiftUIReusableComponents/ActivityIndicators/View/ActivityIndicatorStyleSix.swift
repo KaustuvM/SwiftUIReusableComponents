@@ -88,6 +88,6 @@ struct ActivityIndicatorStyleSix: View {
 
 struct ActivityIndicatorStyleSix_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityIndicatorStyleSix(color_1: .constant(Color("Light_7")), color_2: .constant(Color("Dark_7")), isSoundOn: .constant(false))
+        ActivityIndicatorStyleSix(color_1: .constant(Color("Dark_7")), color_2: .constant(Color("Light_7")), isSoundOn: .constant(false))
     }
 }

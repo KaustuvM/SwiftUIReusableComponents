@@ -72,7 +72,16 @@ class AppState: ObservableObject {
                     displaySoundOption: true,
                     isSoundOn: false,
                     gradientColor: [Color("Light_14"), Color("Dark_14")],
-                    viewType: .CIRCLE_BUTTON_STYLE_ONE)
+                    viewType: .CIRCLE_BUTTON_STYLE_ONE),
+                ItemModel(
+                    description: "Test View",
+                    fileName: "TestView.swift",
+                    developer: "Kaustuv Mukherjee",
+                    displayColorOptions: true,
+                    displaySoundOption: true,
+                    isSoundOn: false,
+                    gradientColor: [Color("Light_2"), Color("Dark_2")],
+                    viewType: .TEST_VIEW)
             ]
         ),
         TemplateModel(
