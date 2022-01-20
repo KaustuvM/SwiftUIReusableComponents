@@ -72,16 +72,7 @@ class AppState: ObservableObject {
                     displaySoundOption: true,
                     isSoundOn: false,
                     gradientColor: [Color("Light_14"), Color("Dark_14")],
-                    viewType: .CIRCLE_BUTTON_STYLE_ONE),
-                ItemModel(
-                    description: "Test View",
-                    fileName: "TestView.swift",
-                    developer: "Kaustuv Mukherjee",
-                    displayColorOptions: true,
-                    displaySoundOption: true,
-                    isSoundOn: false,
-                    gradientColor: [Color("Light_2"), Color("Dark_2")],
-                    viewType: .TEST_VIEW)
+                    viewType: .CIRCLE_BUTTON_STYLE_ONE)
             ]
         ),
         TemplateModel(
@@ -165,6 +156,26 @@ class AppState: ObservableObject {
                     isSoundOn: false,
                     gradientColor: [Color("Light_15"), Color("Dark_15")],
                     viewType: .ACTIITY_INDICATOR_STYLE_SIX)
+            ]
+        ),
+        TemplateModel(
+            image: "hourglass.circle",
+            title: "Group Controls",
+            caption: "Various group control styles",
+            colors: [Color.gray, Color.black],
+            navigateTo: .VSCROLL,
+            item: ItemModel(),
+            hScrollItems: [],
+            vScrollItems: [
+                ItemModel(
+                description: "Group Control Style One",
+                fileName: "GroupControlStyleOne.swift",
+                developer: "Kaustuv Mukherjee",
+                displayColorOptions: true,
+                displaySoundOption: false,
+                isSoundOn: false,
+                gradientColor: [Color("Light_13"), Color("Light_15")],
+                viewType: .GROUP_CONTROL_STYLE_ONE)
             ]
         )
     ]

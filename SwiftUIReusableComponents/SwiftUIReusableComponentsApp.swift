@@ -14,6 +14,7 @@ struct SwiftUIReusableComponentsApp: App {
             RootView()
                 .environmentObject(AppState())
                 .environmentObject(PCSOState())
+                .environmentObject(GCState())
         }
     }
 }

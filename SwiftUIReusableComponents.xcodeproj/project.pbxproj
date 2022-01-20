@@ -20,6 +20,9 @@
 		0693E9EA2776728A00502261 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0693E9E82776728A00502261 /* chimeup.mp3 */; };
 		0693E9EB2776728A00502261 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0693E9E92776728A00502261 /* success.m4a */; };
 		0693E9ED277672D500502261 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693E9EC277672D500502261 /* AudioPlayer.swift */; };
+		069B7DB82799282900D643CA /* GCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B7DB72799282900D643CA /* GCModel.swift */; };
+		069B7DBA279928B900D643CA /* GCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B7DB9279928B900D643CA /* GCState.swift */; };
+		069B7DBC279929F600D643CA /* GroupControlStyleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B7DBB279929F600D643CA /* GroupControlStyleOne.swift */; };
 		06D1CA8E278A943500E61D4F /* ActivityIndicatorStyleFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA8D278A943500E61D4F /* ActivityIndicatorStyleFour.swift */; };
 		06D1CA90278A944800E61D4F /* ActivityIndicatorStyleFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA8F278A944800E61D4F /* ActivityIndicatorStyleFive.swift */; };
 		06D1CA92278A945700E61D4F /* ActivityIndicatorStyleSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1CA91278A945700E61D4F /* ActivityIndicatorStyleSix.swift */; };
@@ -58,6 +61,9 @@
 		0693E9E82776728A00502261 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		0693E9E92776728A00502261 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		0693E9EC277672D500502261 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		069B7DB72799282900D643CA /* GCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCModel.swift; sourceTree = "<group>"; };
+		069B7DB9279928B900D643CA /* GCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCState.swift; sourceTree = "<group>"; };
+		069B7DBB279929F600D643CA /* GroupControlStyleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupControlStyleOne.swift; sourceTree = "<group>"; };
 		06D1CA8D278A943500E61D4F /* ActivityIndicatorStyleFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleFour.swift; sourceTree = "<group>"; };
 		06D1CA8F278A944800E61D4F /* ActivityIndicatorStyleFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleFive.swift; sourceTree = "<group>"; };
 		06D1CA91278A945700E61D4F /* ActivityIndicatorStyleSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStyleSix.swift; sourceTree = "<group>"; };
@@ -152,6 +158,32 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		069B7DB42799275500D643CA /* GroupControl */ = {
+			isa = PBXGroup;
+			children = (
+				069B7DB62799277400D643CA /* View */,
+				069B7DB52799276E00D643CA /* Model */,
+			);
+			path = GroupControl;
+			sourceTree = "<group>";
+		};
+		069B7DB52799276E00D643CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				069B7DB72799282900D643CA /* GCModel.swift */,
+				069B7DB9279928B900D643CA /* GCState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069B7DB62799277400D643CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				069B7DBB279929F600D643CA /* GroupControlStyleOne.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		06D93AED27719E1B009B668C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +224,7 @@
 		06F78D46276FF713007CEED6 /* SwiftUIReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				069B7DB42799275500D643CA /* GroupControl */,
 				065C0114278A49EF006F2860 /* ActivityIndicators */,
 				06D93AEE2774F652009B668C /* PageControl */,
 				06F78D6E277043A0007CEED6 /* Buttons */,
@@ -347,6 +380,7 @@
 				0693E9D72775B73300502261 /* PCSOButton.swift in Sources */,
 				06F78D48276FF713007CEED6 /* SwiftUIReusableComponentsApp.swift in Sources */,
 				06F935DB2794042E009B95E1 /* CircleButtonStyleOne.swift in Sources */,
+				069B7DB82799282900D643CA /* GCModel.swift in Sources */,
 				0693E9E42776485400502261 /* TestView.swift in Sources */,
 				06D1CA90278A944800E61D4F /* ActivityIndicatorStyleFive.swift in Sources */,
 				065C011B278A6DFD006F2860 /* ActivityIndicatorStyleThree.swift in Sources */,
@@ -357,8 +391,10 @@
 				06D93AF22774FC9F009B668C /* CapsuleButtonStyleOne.swift in Sources */,
 				0693E9DB2775BFA300502261 /* PCSOModel.swift in Sources */,
 				0693E9D52775B5E700502261 /* PageControlStyleOne.swift in Sources */,
+				069B7DBC279929F600D643CA /* GroupControlStyleOne.swift in Sources */,
 				065C0119278A5BD8006F2860 /* ActivityIndicatorStyleTwo.swift in Sources */,
 				0693E9E22775C33700502261 /* PCSOCard.swift in Sources */,
+				069B7DBA279928B900D643CA /* GCState.swift in Sources */,
 				06F78D6927703D74007CEED6 /* TemplateModel.swift in Sources */,
 				0693E9E6277651A000502261 /* WrapperItemView.swift in Sources */,
 				0693E9ED277672D500502261 /* AudioPlayer.swift in Sources */,

@@ -45,6 +45,9 @@ struct VScrollWrapperItemView: View {
                 ActivityIndicatorStyleFive(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
             case .ACTIITY_INDICATOR_STYLE_SIX:
                 ActivityIndicatorStyleSix(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+            case .GROUP_CONTROL_STYLE_ONE:
+                GroupControlStyleOne(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
+                    .padding()
             case .TEST_VIEW:
                 TestView(color_1: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[0], color_2: $appState.templateData[templateIndex].vScrollItems[itemIndex].gradientColor[1], isSoundOn: $appState.templateData[templateIndex].vScrollItems[itemIndex].isSoundOn)
                     .padding(.top, 20)
